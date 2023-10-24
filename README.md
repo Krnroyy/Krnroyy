@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Krnroyy
-- 👀 I’m interested in solving pronlems
+- 👀 I’m interested in solving problems
 - 🌱 I’m currently learning c & c++
 - 💞️ I’m looking to collaborate on c
 - 📫 How to reach me through my instagram:- @krnroyy
