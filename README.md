@@ -1,10 +1,8 @@
-- 👋 Hi, I’m @Krnroyy
-- 👀 I’m interested in solving problems
-- 🌱 I’m currently learning c & c++
-- 💞️ I’m looking to collaborate on c
-- 📫 How to reach me through my instagram:- @krnroyy
-
-<!---
-Krnroyy/Krnroyy is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+👋 Hi, I’m Karan Kumar
+🎓 ECE final year student @ IIIT Bhagalpur
+⚡ Interested in VLSI, RTL Design, FPGA & Digital Hardware
+💻 Working with Verilog, Vivado, C/C++ & Python
+🔐 Building FPGA-based secure hardware systems
+🌱 Exploring Timing Analysis, Optimization & Digital IC Design
+🤝 Open to VLSI, FPGA and RTL collaboration
+📫 Connect: @krnroyy
