@@ -21,6 +21,14 @@ Building digital hardware and making its behaviour verifiable.
 - Exploring FIFO design, AXI handshakes, assertions, and reference-model checking.
 - Open to internships, entry-level opportunities, and engineering collaboration.
 
+## Featured Projects
+
+| Project | Engineering Focus | Evidence |
+|---|---|---|
+| [AXI4-Stream FIFO](https://github.com/Krnroyy/axis-packet-fifo) | SystemVerilog beat FIFO, scoreboard simulation, formal safety checks | [Validation](https://github.com/Krnroyy/axis-packet-fifo/blob/master/results/VALIDATION.md), [bug case study](https://github.com/Krnroyy/axis-packet-fifo/blob/master/docs/BUG_CASE_STUDY.md), [waveform](https://github.com/Krnroyy/axis-packet-fifo#backpressure-waveform) |
+| [FPGA AES-128-GCM Image Security](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption) | ZCU104 accelerator, AXI DMA, Cortex-A53 integration, Python reference checks | [Measured results](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption/blob/main/RESULTS.md) |
+| [CMOS Full Adder](https://github.com/Krnroyy/cadence-cmos-full-adder) | Hierarchical CMOS design using gpdk180 and Spectre | Schematics, eight-state verification, and load characterization in the repository |
+
 ## Technical Toolkit
 
 ### RTL and Verification
@@ -44,14 +52,6 @@ Building digital hardware and making its behaviour verifiable.
 **Programming:** Python, C, C++  
 **Interfaces:** AXI4-Stream, AXI4-Lite, AXI DMA  
 **Environment:** Windows, WSL Ubuntu, Git, GitHub Actions
-
-## Featured Projects
-
-| Project | Engineering Focus | Evidence |
-|---|---|---|
-| [AXI4-Stream FIFO](https://github.com/Krnroyy/axis-packet-fifo) | SystemVerilog beat FIFO, scoreboard simulation, formal safety checks | [Validation](https://github.com/Krnroyy/axis-packet-fifo/blob/master/results/VALIDATION.md), [bug case study](https://github.com/Krnroyy/axis-packet-fifo/blob/master/docs/BUG_CASE_STUDY.md), [waveform](https://github.com/Krnroyy/axis-packet-fifo#backpressure-waveform) |
-| [FPGA AES-128-GCM Image Security](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption) | ZCU104 accelerator, AXI DMA, Cortex-A53 integration, Python reference checks | [Measured results](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption/blob/main/RESULTS.md) |
-| [CMOS Full Adder](https://github.com/Krnroyy/cadence-cmos-full-adder) | Hierarchical CMOS design using gpdk180 and Spectre | Schematics, eight-state verification, and load characterization in the repository |
 
 ## Verification in Action
 
