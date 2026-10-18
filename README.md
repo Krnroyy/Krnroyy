@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/github-banner.png" alt="Karan Kumar — RTL Design, FPGA, Verification" width="100%"></p>
+
 <h1 align="center">Hi, I'm Karan Kumar</h1>
 
 <h3 align="center">RTL Design | FPGA Development | Hardware Verification</h3>
