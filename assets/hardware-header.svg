@@ -1,19 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="144" viewBox="0 0 1200 144" role="img" aria-labelledby="title desc">
-<title id="title">RTL, FPGA, and Verification</title>
-<desc id="desc">A compact decorative hardware header with gently moving cyan pulses. Design intent. Tested behaviour.</desc>
-<defs><linearGradient id="background"><stop stop-color="#101c2b"/><stop offset="1" stop-color="#0d1117"/></linearGradient></defs>
-<style>
-.track{fill:none;stroke:#284757;stroke-width:2}.pulse{fill:none;stroke:#56d5e7;stroke-width:2;stroke-dasharray:18 450;animation:flow 9s linear infinite}.second{animation-delay:-4s;stroke:#61c6b1}.pin{stroke:#487386;stroke-width:2}text{font-family:Arial,Helvetica,sans-serif}@keyframes flow{to{stroke-dashoffset:-468}}@media(prefers-reduced-motion:reduce){.pulse{animation:none}}
-</style>
-<rect x="1" y="1" width="1198" height="142" rx="12" fill="url(#background)" stroke="#263849"/>
-<rect x="30" y="30" width="3" height="66" rx="1" fill="#56d5e7"/>
-<text x="50" y="61" fill="#edf3f9" font-size="30" font-weight="700" letter-spacing="2">RTL / FPGA / VERIFICATION</text>
-<text x="51" y="91" fill="#93aabc" font-size="16" letter-spacing="1">Design intent. Tested behaviour.</text>
-<path class="track" d="M700 39H770L794 63H905M750 92H823L845 70H905M1009 63H1050L1074 39H1168M1009 70H1060L1082 92H1168"/>
-<path class="pulse" d="M700 39H770L794 63H905M1009 63H1050L1074 39H1168"/>
-<path class="pulse second" d="M750 92H823L845 70H905M1009 70H1060L1082 92H1168"/>
-<g class="pin"><path d="M921 35V25M939 35V25M957 35V25M975 35V25M993 35V25M921 99V109M939 99V109M957 99V109M975 99V109M993 99V109M905 47H895M905 64H895M905 82H895M1009 47H1019M1009 64H1019M1009 82H1019"/></g>
-<rect x="905" y="35" width="104" height="64" rx="8" fill="#142a39" stroke="#56d5e7" stroke-width="2"/>
-<rect x="919" y="47" width="76" height="40" rx="4" fill="#0d1825" stroke="#315365"/>
-<path d="M30 123H275V115H295V123H440V115H460V123H605V115H625V123H770V115H790V123H935V115H955V123H1170" fill="none" stroke="#294c5d" stroke-width="1.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="112" viewBox="0 0 1200 112" role="img" aria-labelledby="title desc">
+<title id="title">RTL Design, FPGA, Verification</title>
+<desc id="desc">Digital hardware portfolio. Subtle moving pulses are decorative, not simulation data.</desc>
+<style>.track{fill:none;stroke:#294553;stroke-width:1.8}.pulse{fill:none;stroke:#56c9d8;stroke-width:2;stroke-dasharray:16 450;animation:flow 9s linear infinite}.second{animation-delay:-4s;stroke:#70bba9}.pin{stroke:#456676;stroke-width:1.6}text{font-family:Arial,Helvetica,sans-serif}@keyframes flow{to{stroke-dashoffset:-466}}@media(prefers-reduced-motion:reduce){.pulse{animation:none}}</style>
+<rect width="1200" height="112" fill="#0d1117"/>
+<path d="M0 111H1200" stroke="#293942"/>
+<rect x="0" y="20" width="3" height="64" fill="#56c9d8"/>
+<text x="24" y="47" fill="#e6edf3" font-size="28" font-weight="600" letter-spacing="1.5">RTL DESIGN / FPGA / VERIFICATION</text>
+<text x="25" y="76" fill="#91a5b5" font-size="16">ECE @ IIIT Bhagalpur · Digital hardware portfolio</text>
+<path class="track" d="M750 30H810L832 52H973M805 83H865L886 62H973M1057 52H1100L1122 30H1180M1057 62H1108L1129 83H1180"/>
+<path class="pulse" d="M750 30H810L832 52H973M1057 52H1100L1122 30H1180"/>
+<path class="pulse second" d="M805 83H865L886 62H973M1057 62H1108L1129 83H1180"/>
+<g class="pin"><path d="M987 31V23M1005 31V23M1023 31V23M1041 31V23M987 83V91M1005 83V91M1023 83V91M1041 83V91M973 43H965M973 57H965M973 71H965M1057 43H1065M1057 57H1065M1057 71H1065"/></g>
+<rect x="973" y="31" width="84" height="52" rx="4" fill="#11232f" stroke="#56c9d8" stroke-width="1.5"/>
+<rect x="984" y="42" width="62" height="30" rx="2" fill="#0d1720" stroke="#294553"/>
 </svg>
