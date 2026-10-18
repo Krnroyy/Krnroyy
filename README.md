@@ -11,6 +11,14 @@ FPGA development, and digital hardware verification.
 
 ## Featured Projects
 
+### AXI4-Stream FIFO: Simulation and Formal Verification
+SystemVerilog beat FIFO preserving TKEEP and TLAST, with
+scoreboard-based simulation, formal safety checks, and
+GitHub Actions CI. Includes a bug-injection exercise
+detected by both simulation and formal verification.
+
+[Explore the project](https://github.com/Krnroyy/axis-packet-fifo)
+
 ### FPGA AES-128-GCM Image Security
 Custom Verilog accelerator on ZCU104 with AXI DMA and
 Cortex-A53 software integration. Includes Python AESGCM
