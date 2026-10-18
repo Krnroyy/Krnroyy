@@ -1,11 +1,12 @@
-﻿# Hi, I'm Karan Kumar
+# Hi, I'm Karan Kumar
 
 ECE final-year student at IIIT Bhagalpur, focused on RTL design,
 FPGA development, and digital hardware verification.
 
 ## Technical Skills
-- Hardware: Verilog, RTL design, FPGA development
+- Hardware: Verilog, SystemVerilog, RTL design, FPGA development
 - Tools: AMD/Xilinx Vivado, Vitis, Cadence Virtuoso, Spectre
+- Verification tools: Icarus Verilog, GTKWave, Yosys/SMTBMC, Z3
 - Programming: C, C++, Python
 - Interfaces: AXI4-Stream, AXI4-Lite, AXI DMA
 
