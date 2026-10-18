@@ -9,6 +9,7 @@ Building digital hardware and making its behaviour verifiable.
 
 <p align="center">
 <a href="https://krnroyy.github.io/responsive-personal-portfolio/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-Visit-136F63?style=for-the-badge"></a>
+<a href="https://www.linkedin.com/in/krnroyy/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge"></a>
 <a href="https://github.com/Krnroyy"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-Krnroyy-181717?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
