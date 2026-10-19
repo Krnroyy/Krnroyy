@@ -1,24 +1,64 @@
-<img src="assets/hardware-header.gif" alt="RTL Design / FPGA / Verification — ECE at IIIT Bhagalpur" width="100%">
+<img src="assets/hardware-header.gif" alt="RTL Design, FPGA and Verification — ECE at IIIT Bhagalpur" width="100%">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-136F63?style=flat-square)](https://krnroyy.github.io/responsive-personal-portfolio/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square)](https://www.linkedin.com/in/krnroyy/) [![FIFO CI](https://github.com/Krnroyy/axis-packet-fifo/actions/workflows/verify.yml/badge.svg?branch=master)](https://github.com/Krnroyy/axis-packet-fifo/actions/workflows/verify.yml)
+# RTL Design · FPGA · Digital Verification
 
-### Selected Projects
+I am an Electronics and Communication Engineering student at IIIT Bhagalpur, building projects in RTL design, FPGA implementation, and verification.
 
-| Project | Engineering work | Evidence |
-|---|---|---|
-| **[AXI4-Stream FIFO](https://github.com/Krnroyy/axis-packet-fifo)** | SystemVerilog RTL, scoreboard simulation, formal safety checks | [Validation](https://github.com/Krnroyy/axis-packet-fifo/blob/master/results/VALIDATION.md) · [Bug study](https://github.com/Krnroyy/axis-packet-fifo/blob/master/docs/BUG_CASE_STUDY.md) · [Waveform](https://github.com/Krnroyy/axis-packet-fifo#backpressure-waveform) |
-| **[AES-GCM on ZCU104](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption)** | Verilog accelerator, AXI DMA, Cortex-A53, Python reference checks | [Results](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption/blob/main/RESULTS.md) · [Build](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption/blob/main/BUILD_AND_RUN.md) |
-| **[CMOS Full Adder](https://github.com/Krnroyy/cadence-cmos-full-adder)** | gpdk180 schematic design, Spectre verification, load characterization | [Schematics & results](https://github.com/Krnroyy/cadence-cmos-full-adder#readme) |
+My work includes AXI4-Stream interfaces, hardware encryption on ZCU104, and transistor-level CMOS design using Cadence Virtuoso.
 
-<sub>FIFO formal scope: 8-bit data, depth 4, under documented harness assumptions. Full-adder scope: schematic simulation.</sub>
+[![Portfolio](https://img.shields.io/badge/Portfolio-136F63?style=flat-square)](https://krnroyy.github.io/responsive-personal-portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square)](https://www.linkedin.com/in/krnroyy/)
+[![FIFO CI](https://github.com/Krnroyy/axis-packet-fifo/actions/workflows/verify.yml/badge.svg?branch=master)](https://github.com/Krnroyy/axis-packet-fifo/actions/workflows/verify.yml)
 
-### Technical Toolkit
+## Selected Projects
 
-- **RTL & verification:** Verilog, SystemVerilog, Icarus Verilog, GTKWave, Yosys/SMTBMC, Z3
-- **FPGA & interfaces:** Vivado, Vitis, AXI4-Stream, AXI4-Lite, AXI DMA
-- **Circuits:** Cadence Virtuoso, Spectre, gpdk180
-- **Software & workflow:** Python, C/C++, Git, GitHub Actions, WSL Ubuntu
+### AES-GCM Hardware Accelerator — ZCU104
 
-### Current Focus
+Custom Verilog accelerator integrated with AXI DMA and Cortex-A53 software, with Python reference verification.
 
-Learning AXI interfaces, formal properties, and AES-GCM hardware architecture. Open to internships, entry-level roles, and engineering collaboration through [LinkedIn](https://www.linkedin.com/in/krnroyy/).
+- Documented board tests: 11/11 ciphertext and authentication-tag matches against Python AESGCM.
+- Modified ciphertext rejected in all 11 documented tamper tests.
+- Compared CTR and GCM implementations for throughput, resource utilization, and timing.
+
+[Repository](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption) · [Results](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption/blob/main/RESULTS.md) · [Build instructions](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption/blob/main/BUILD_AND_RUN.md)
+
+### AXI4-Stream FIFO — Simulation and Formal Verification
+
+Parameterized SystemVerilog beat FIFO preserving TDATA, TKEEP, and TLAST, with scoreboard-based simulation and formal safety checks.
+
+- 12 passing simulation runs across depths 1, 3, 4, and 16.
+- Formal base checks and induction passed for an 8-bit, depth-4 configuration under documented assumptions.
+- Deliberately injected handshake bug detected by simulation and formal verification.
+- Automated simulation and formal checks through GitHub Actions.
+
+[Repository](https://github.com/Krnroyy/axis-packet-fifo) · [Validation](https://github.com/Krnroyy/axis-packet-fifo/blob/master/results/VALIDATION.md) · [Bug case study](https://github.com/Krnroyy/axis-packet-fifo/blob/master/docs/BUG_CASE_STUDY.md)
+
+### CMOS Full Adder — Cadence Virtuoso
+
+Hierarchical 1-bit full adder designed using gpdk180 and simulated with Spectre at 1.8 V.
+
+- Functional simulation across all eight input combinations.
+- Output-load characterization from 5 fF to 50 fF.
+- Documented propagation-delay measurements, average supply power, schematics, and waveforms.
+
+Scope: schematic-level simulation; physical layout, DRC, and LVS are not included.
+
+[Repository and results](https://github.com/Krnroyy/cadence-cmos-full-adder)
+
+## Technical Toolkit
+
+| Area | Tools and technologies |
+|---|---|
+| RTL and verification | Verilog, SystemVerilog, Icarus Verilog, GTKWave |
+| Formal verification | Yosys/SMTBMC, Z3 |
+| FPGA and interfaces | Vivado, Vitis, ZCU104, AXI4-Stream, AXI4-Lite, AXI DMA |
+| CMOS design | Cadence Virtuoso, Spectre, gpdk180 |
+| Programming and workflow | Python, C/C++, Git, GitHub Actions, WSL Ubuntu |
+
+## Current Focus
+
+Developing my understanding of AXI interfaces, formal properties, and AES-GCM hardware architecture, with an emphasis on reproducible tests and documented results.
+
+Open to internships and entry-level opportunities in RTL design, FPGA development, and design verification.
+
+[Connect on LinkedIn](https://www.linkedin.com/in/krnroyy/)
