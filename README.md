@@ -8,7 +8,7 @@ My work includes AXI4-Stream interfaces, hardware encryption on ZCU104, and tran
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-136F63?style=flat-square)](https://krnroyy.github.io/responsive-personal-portfolio/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square)](https://www.linkedin.com/in/krnroyy/)
-[![FIFO CI](https://github.com/Krnroyy/axis-packet-fifo/actions/workflows/verify.yml/badge.svg?branch=master)](https://github.com/Krnroyy/axis-packet-fifo/actions/workflows/verify.yml)
+[![FIFO CI](https://github.com/Krnroyy/axi4-stream-fifo/actions/workflows/verify.yml/badge.svg?branch=master)](https://github.com/Krnroyy/axi4-stream-fifo/actions/workflows/verify.yml)
 
 ## Selected Projects
 
@@ -20,7 +20,7 @@ Custom Verilog accelerator integrated with AXI DMA and Cortex-A53 software, with
 - Modified ciphertext rejected in all 11 documented tamper tests.
 - Compared CTR and GCM implementations for throughput, resource utilization, and timing.
 
-[Repository](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption) · [Results](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption/blob/main/RESULTS.md) · [Build instructions](https://github.com/Krnroyy/FPGA-AES128-CTR-Image-Encryption/blob/main/BUILD_AND_RUN.md)
+[Repository](https://github.com/Krnroyy/fpga-aes128-gcm-image-encryption) · [Results](https://github.com/Krnroyy/fpga-aes128-gcm-image-encryption/blob/main/RESULTS.md) · [Build instructions](https://github.com/Krnroyy/fpga-aes128-gcm-image-encryption/blob/main/BUILD_AND_RUN.md)
 
 ### AXI4-Stream FIFO — Simulation and Formal Verification
 
@@ -31,7 +31,7 @@ Parameterized SystemVerilog beat FIFO preserving TDATA, TKEEP, and TLAST, with s
 - Deliberately injected handshake bug detected by simulation and formal verification.
 - Automated simulation and formal checks through GitHub Actions.
 
-[Repository](https://github.com/Krnroyy/axis-packet-fifo) · [Validation](https://github.com/Krnroyy/axis-packet-fifo/blob/master/results/VALIDATION.md) · [Bug case study](https://github.com/Krnroyy/axis-packet-fifo/blob/master/docs/BUG_CASE_STUDY.md)
+[Repository](https://github.com/Krnroyy/axi4-stream-fifo) · [Validation](https://github.com/Krnroyy/axi4-stream-fifo/blob/master/results/VALIDATION.md) · [Bug case study](https://github.com/Krnroyy/axi4-stream-fifo/blob/master/docs/BUG_CASE_STUDY.md)
 
 ### CMOS Full Adder — Cadence Virtuoso
 
