@@ -1,18 +1,36 @@
-<img src="assets/hardware-header.gif" alt="RTL Design, FPGA and Verification — ECE at IIIT Bhagalpur" width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/glass-header-dark-static.png">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/glass-header-light-static.png">
+  <source type="image/webp" media="(prefers-color-scheme: dark)" srcset="assets/glass-header-dark.webp">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/glass-header-dark.gif">
+  <source type="image/webp" srcset="assets/glass-header-light.webp">
+  <img src="assets/glass-header-light.gif" alt="Karan Kumar — RTL design, design verification and FPGA engineering; animated glass chip illustration" width="100%">
+</picture>
 
-# RTL Design · FPGA · Digital Verification
+**Final-year Electronics and Communication Engineering student at IIIT Bhagalpur.**
 
-I am an Electronics and Communication Engineering student at IIIT Bhagalpur, building projects in RTL design, FPGA implementation, and verification.
+I build digital hardware and verify how it behaves: processor pipelines, AXI interfaces, FPGA accelerators, and CMOS circuits. I am looking for internships and entry-level roles in **RTL design, design verification, and FPGA engineering**.
 
-My work spans processor pipelines, AXI interfaces, hardware encryption on ZCU104, and transistor-level CMOS design.
+<a href="https://krnroyy.github.io/responsive-personal-portfolio/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/glass-portfolio-dark.svg"><img src="assets/glass-portfolio-light.svg" alt="Explore my portfolio" width="182" height="42"></picture></a>
+<a href="https://www.linkedin.com/in/krnroyy/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/glass-linkedin-dark.svg"><img src="assets/glass-linkedin-light.svg" alt="Connect on LinkedIn" width="182" height="42"></picture></a>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-136F63?style=flat-square)](https://krnroyy.github.io/responsive-personal-portfolio/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square)](https://www.linkedin.com/in/krnroyy/)
-[![FIFO CI](https://github.com/Krnroyy/axi4-stream-fifo/actions/workflows/verify.yml/badge.svg?branch=master)](https://github.com/Krnroyy/axi4-stream-fifo/actions/workflows/verify.yml)
+## Selected work
 
-## Selected Projects
+| Project | What I designed and verified |
+| :--- | :--- |
+| **[Five-stage RV32I subset processor](https://github.com/Krnroyy/rv32i-pipelined-processor)** | Forwarding, load-use interlocks and control-flow flushes; UVM, directed tests and bounded formal safety checks. |
+| **[AXI4-Stream FIFO](https://github.com/Krnroyy/axi4-stream-fifo)** | Parameterized beat FIFO; scoreboard simulation, scoped formal proof and a documented injected-bug case study. |
+| **[Pipelined 8-bit ALU](https://github.com/Krnroyy/pipelined-8bit-alu)** | Five RTL implementations compared through exhaustive tests, UVM, equivalence and an educational SKY130HD flow. |
+| **[AXI4-Lite timer](https://github.com/Krnroyy/axi-lite-timer)** | Independent write channels, byte strobes and interrupts; UVM checks for register behaviour, completion and reset. |
+| **[AES-GCM accelerator](https://github.com/Krnroyy/fpga-aes128-gcm-image-encryption)** | Custom Verilog with AXI DMA and Cortex-A53 software; documented reference comparisons and tamper tests. |
+| **[CMOS full adder](https://github.com/Krnroyy/cadence-cmos-full-adder)** | gpdk180 schematic design in Virtuoso; Spectre functional simulation and output-load characterization. |
 
-### Five-stage RV32I Subset Processor — ZCU104
+### Results and scope
+
+Expand a project for its documented results, limits, and evidence links.
+
+<details>
+<summary><b>Five-stage RV32I Subset Processor — ZCU104</b></summary>
 
 32-bit in-order pipeline with forwarding, load-use interlocks, and branch/jump flushes.
 
@@ -24,7 +42,10 @@ Scope: RV32I subset; no full ISA compliance or unbounded architectural proof is 
 
 [Repository](https://github.com/Krnroyy/rv32i-pipelined-processor) · [Verification](https://github.com/Krnroyy/rv32i-pipelined-processor/blob/main/docs/test_plan.md) · [Board evidence](https://github.com/Krnroyy/rv32i-pipelined-processor/blob/main/docs/zcu104_demo.md) · [CI](https://github.com/Krnroyy/rv32i-pipelined-processor/actions/workflows/rtl-regression.yml)
 
-### AXI4-Stream FIFO — Simulation and Formal Verification
+</details>
+
+<details>
+<summary><b>AXI4-Stream FIFO — Simulation and Formal Verification</b></summary>
 
 Parameterized SystemVerilog beat FIFO preserving TDATA, TKEEP, and TLAST, with scoreboard-based simulation and formal safety checks.
 
@@ -35,7 +56,12 @@ Parameterized SystemVerilog beat FIFO preserving TDATA, TKEEP, and TLAST, with s
 
 [Repository](https://github.com/Krnroyy/axi4-stream-fifo) · [Validation](https://github.com/Krnroyy/axi4-stream-fifo/blob/master/results/VALIDATION.md) · [Bug case study](https://github.com/Krnroyy/axi4-stream-fifo/blob/master/docs/BUG_CASE_STUDY.md)
 
-### Pipelined 8-bit ALU — RTL to GDS
+[![FIFO CI](https://github.com/Krnroyy/axi4-stream-fifo/actions/workflows/verify.yml/badge.svg?branch=master)](https://github.com/Krnroyy/axi4-stream-fifo/actions/workflows/verify.yml)
+
+</details>
+
+<details>
+<summary><b>Pipelined 8-bit ALU — RTL to GDS</b></summary>
 
 Compared five SystemVerilog implementations using exhaustive tests, UVM, Yosys equivalence and SKY130HD/OpenROAD implementation.
 
@@ -46,13 +72,19 @@ Scope: educational RTL-to-GDS flow; no fabrication or production foundry signoff
 
 [Repository](https://github.com/Krnroyy/pipelined-8bit-alu) · [Results](https://github.com/Krnroyy/pipelined-8bit-alu/blob/main/docs/PROJECT_COMPLETION.md) · [v1.1.0 release](https://github.com/Krnroyy/pipelined-8bit-alu/releases/tag/v1.1.0)
 
-### AXI4-Lite Countdown Timer — UVM Verification
+</details>
+
+<details>
+<summary><b>AXI4-Lite Countdown Timer — UVM Verification</b></summary>
 
 Memory-mapped SystemVerilog timer with independent AXI write channels, byte strobes, countdown, busy status and interrupts. UVM checks cover register behaviour, completion, interrupt clearing and reset recovery.
 
 [Repository and verification](https://github.com/Krnroyy/axi-lite-timer)
 
-### AES-GCM Hardware Accelerator — ZCU104
+</details>
+
+<details>
+<summary><b>AES-GCM Hardware Accelerator — ZCU104</b></summary>
 
 Custom Verilog accelerator integrated with AXI DMA and Cortex-A53 software, with Python reference verification.
 
@@ -62,7 +94,10 @@ Custom Verilog accelerator integrated with AXI DMA and Cortex-A53 software, with
 
 [Repository](https://github.com/Krnroyy/fpga-aes128-gcm-image-encryption) · [Results](https://github.com/Krnroyy/fpga-aes128-gcm-image-encryption/blob/main/RESULTS.md) · [Build instructions](https://github.com/Krnroyy/fpga-aes128-gcm-image-encryption/blob/main/BUILD_AND_RUN.md)
 
-### CMOS Full Adder — Cadence Virtuoso
+</details>
+
+<details>
+<summary><b>CMOS Full Adder — Cadence Virtuoso</b></summary>
 
 Hierarchical 1-bit full adder designed using gpdk180 and simulated with Spectre at 1.8 V.
 
@@ -74,7 +109,9 @@ Scope: schematic-level simulation; physical layout, DRC, and LVS are not include
 
 [Repository and results](https://github.com/Krnroyy/cadence-cmos-full-adder)
 
-## Technical Toolkit
+</details>
+
+## Tools I use
 
 | Area | Tools and technologies |
 |---|---|
@@ -85,10 +122,8 @@ Scope: schematic-level simulation; physical layout, DRC, and LVS are not include
 | CMOS design | Cadence Virtuoso, Spectre, gpdk180 |
 | Programming and workflow | Python, C/C++, Git, GitHub Actions, WSL Ubuntu |
 
-## Current Focus
+## What I am working on
 
 Processor microarchitecture, hazard handling, UVM scoreboards and formal safety properties, with reproducible tests and clearly scoped implementation results.
 
-Open to internships and entry-level opportunities in RTL design, FPGA development, and design verification.
-
-[Connect on LinkedIn](https://www.linkedin.com/in/krnroyy/)
+[Explore my portfolio](https://krnroyy.github.io/responsive-personal-portfolio/) · [Connect on LinkedIn](https://www.linkedin.com/in/krnroyy/)
